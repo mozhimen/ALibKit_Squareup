@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.mozhimen.abilityk.squareup.test'
+    namespace 'com.mozhimen.libk.squareup.test'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.mozhimen.abilityk.squareup.test"
+        applicationId "com.mozhimen.libk.squareup.test"
         minSdk 21
         targetSdk 34
         versionCode 1
