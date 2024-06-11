@@ -21,8 +21,11 @@ dependencyResolutionManagement {
 rootProject.name = "ALibKit_Squareup"
 include ':app'
 include ':picasso'
+include ':moshi'
 //SwiftKit
 include ':SwiftKit'
 project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
-include ':moshi'
+include ':retrofit2'
+include ':okhttp3'
+include ':okhttp3_log'
