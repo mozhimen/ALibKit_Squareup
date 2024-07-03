@@ -28,5 +28,6 @@ project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
 include ':SwiftKit:basick'
 include ':retrofit2'
 include ':okhttp3'
-include ':okhttp3_log'
-include ':retrofit2_rxjava2'
+include ':okhttp3_logging_interceptor'
+include ':retrofit2_adapter_rxjava2'
+include ':okio'
