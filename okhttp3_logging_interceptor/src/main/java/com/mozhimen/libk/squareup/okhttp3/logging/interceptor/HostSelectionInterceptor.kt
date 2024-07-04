@@ -12,7 +12,7 @@ import okhttp3.Response
  * @Date 2024/7/3
  * @Version 1.0
  */
-abstract class BaseHostSelectionInterceptor : Interceptor {
+abstract class BaseHostSelectionInterceptor : Interceptor{
     protected open var _httpUrl: HttpUrl? = null//HttpUrl.parse(BuildConfig.DEVELOPMENT_BASE_URL);
 
     override fun intercept(chain: Interceptor.Chain): Response {
