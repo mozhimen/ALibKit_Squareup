@@ -1,18 +1,19 @@
 package com.mozhimen.libk.squareup.okhttp3.logging.interceptor
 
+import okhttp3.Headers
 import okhttp3.HttpUrl
 import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response
 
 /**
- * @ClassName HostSelectionInterceptor
+ * @ClassName HostSelectionInterceptorA
  * @Description TODO
  * @Author Mozhimen & Kolin Zhao
  * @Date 2024/7/3
  * @Version 1.0
  */
-abstract class BaseHostSelectionInterceptor : Interceptor{
+abstract class BaseHostSelectionInterceptor : Interceptor {
     protected open var _httpUrl: HttpUrl? = null//HttpUrl.parse(BuildConfig.DEVELOPMENT_BASE_URL);
 
     override fun intercept(chain: Interceptor.Chain): Response {
@@ -22,8 +23,11 @@ abstract class BaseHostSelectionInterceptor : Interceptor{
                 val newUrl: HttpUrl = request.url.newBuilder()
                     .scheme(_httpUrl!!.scheme)
                     .host(_httpUrl!!.toUrl().toURI().host)
+                    .port(_httpUrl!!.port)
                     .build();
-                request = request.newBuilder().url(newUrl).build();
+                request = request.newBuilder()
+                    .url(newUrl)
+                    .build()
             } catch (_: Exception) {
             }
         }
