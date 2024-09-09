@@ -22,12 +22,22 @@ rootProject.name = "ALibKit_Squareup"
 include ':app'
 include ':picasso'
 include ':moshi'
-//SwiftKit
-include ':SwiftKit'
-project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
-include ':SwiftKit:basick'
 include ':retrofit2'
 include ':okhttp3'
 include ':okhttp3_logging_interceptor'
 include ':retrofit2_adapter_rxjava2'
 include ':okio'
+//SwiftKit
+include ':SwiftKit'
+project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
+include ':SwiftKit:basick'
+//KUtilKit
+include ':KUtilKit'
+project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
+include ':KUtilKit:utilk_android'
+include ':KUtilKit:utilk_kotlin'
+
+include ':moshi_kotlin'
+include ':retrofit2_converter_gson'
+include ':retrofit2_converter_moshi'
+include ':retrofit2_converter_scalars'
