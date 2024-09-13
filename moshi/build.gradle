@@ -33,7 +33,8 @@ android {
 dependencies {
     //serialize
     //moshi
-    api 'com.squareup.moshi:moshi:1.13.0'
+    api 'com.squareup.moshi:moshi:1.15.1'
+    api "com.squareup.moshi:moshi-kotlin:1.15.1"
 //    kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.8.0'
 
     testImplementation 'junit:junit:4.13.2'
