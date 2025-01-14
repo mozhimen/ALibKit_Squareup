@@ -27,18 +27,33 @@ include ':okhttp3'
 include ':okhttp3_logging_interceptor'
 include ':retrofit2_adapter_rxjava2'
 include ':okio'
-//SwiftKit
-include ':SwiftKit'
-project(':SwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\SwiftKit")
-include ':SwiftKit:basick'
+include ':moshi_kotlin'
+include ':retrofit2_converter_gson'
+include ':retrofit2_converter_moshi'
+include ':retrofit2_converter_scalars'
+include ':okhttp3_urlconnection'
+include ':leakcanary_android'
+//ALibKit_Google
+include ':ALibKit_Google'
+project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
+include ':ALibKit_Google:material'
+//ALibKit_Jetpack
+include ':ALibKit_Jetpack'
+project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
+include ':ALibKit_Jetpack:annotation'
+//ALibKit_Jetbrains
+include ':ALibKit_Jetbrains'
+project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
+include ':ALibKit_Jetbrains:kotlin_stdlib'
+include ':ALibKit_Jetbrains:kotlinx_coroutines'
+//ASwiftKit
+include ':ASwiftKit'
+project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
+include ':ASwiftKit:basick'
 //KUtilKit
 include ':KUtilKit'
 project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
 include ':KUtilKit:utilk_android'
 include ':KUtilKit:utilk_kotlin'
 
-include ':moshi_kotlin'
-include ':retrofit2_converter_gson'
-include ':retrofit2_converter_moshi'
-include ':retrofit2_converter_scalars'
-include ':okhttp3_urlconnection'
+
