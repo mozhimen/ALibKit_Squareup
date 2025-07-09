@@ -58,3 +58,4 @@ include ':KUtilKit:android'
 include ':KUtilKit:kotlin'
 
 
+include ':retrofit2_converter_kotlinx_serialization'
